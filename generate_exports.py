@@ -18,6 +18,7 @@ keys = {
     { 'unitX': 1 },
     { 'unitX': 1, 'convex': True },
     { 'unitX': 1, 'depth': 3.6 }, # homing
+    { 'unitX': 1, 'depth': 3.6 }, # homing
     ],
     4: [
     { 'unitX': 1 },
@@ -57,7 +58,14 @@ for i, r in enumerate(rows):
             depth = k['depth']
 
         print("Generating: ", name)
-        cap = opk.keycap(angle=r['angle'], height=r['height'], unitX=k['unitX'], convex=convex, depth=depth)
+        cap = opk.keycap(
+            angle=r['angle'],
+            height=r['height'],
+            unitX=k['unitX'],
+            convex=convex,
+            depth=depth,
+            thickness=3
+        )
         # # Export one key at the time
         # exporters.export(cap, './export/STEP/' + name + '.step')
         # exporters.export(cap, './export/STL/' + name + '.stl', tolerance=0.001, angularTolerance=0.05)
