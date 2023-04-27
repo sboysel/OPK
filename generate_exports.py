@@ -12,45 +12,16 @@ keys = {
     ],
     2: [
     { 'unitX': 1 },
-    { 'unitX': 1.25 },
-    { 'unitX': 1.5 },
-    { 'unitX': 1.75 }
     ],
     3: [
     { 'unitX': 1 },
-    { 'unitX': 1, 'depth': 3.6 },
-    { 'unitX': 1.25 },
-    { 'unitX': 1.5  },
-    { 'unitX': 1.75 },
-    { 'unitX': 2.25 }
+    { 'unitX': 1, 'depth': 3.6 }, # homing
     ],
     4: [
     { 'unitX': 1 },
-    { 'unitX': 1.25 },
-    { 'unitX': 1.5 },
-    { 'unitX': 1.75 },
-    { 'unitX': 2 },
-    { 'unitX': 2.25 },
-    { 'unitX': 1.25   , 'convex': True },
-    { 'unitX': 1.5    , 'convex': True },
-    { 'unitX': 1.75   , 'convex': True },
-    { 'unitX': 2      , 'convex': True },
-    { 'unitX': 2.25   , 'convex': True },
-    { 'unitX': 2.75   , 'convex': True },
     ],
     5: [
     { 'unitX': 1 },
-    { 'unitX': 1.25 },
-    { 'unitX': 1.5 },
-    { 'unitX': 1.75 },
-    { 'unitX': 1.25, 'convex': True },
-    { 'unitX': 1.5 , 'convex': True },
-    { 'unitX': 1.75, 'convex': True },
-    { 'unitX': 2   , 'convex': True },
-    { 'unitX': 2.25   , 'convex': True },
-    { 'unitX': 2.75   , 'convex': True },
-    { 'unitX': 6.25, 'convex': True },
-    { 'unitX': 7, 'convex': True }
     ]
 }
 
@@ -96,5 +67,5 @@ if 'show_object' in locals():
     show_object(assy)
 
 # Export the whole assembly, very handy especially for STEP
-#exporters.export(assy.toCompound(), 'keycaps.stl', tolerance=0.001, angularTolerance=0.05)
+exporters.export(assy.toCompound(), 'keycaps.stl', tolerance=0.001, angularTolerance=0.05)
 #exporters.export(assy.toCompound(), 'keycaps.step')
