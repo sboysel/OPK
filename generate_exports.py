@@ -12,16 +12,20 @@ keys = {
     ],
     2: [
     { 'unitX': 1 },
+    { 'unitX': 1, 'convex': True },
     ],
     3: [
     { 'unitX': 1 },
+    { 'unitX': 1, 'convex': True },
     { 'unitX': 1, 'depth': 3.6 }, # homing
     ],
     4: [
     { 'unitX': 1 },
+    { 'unitX': 1, 'convex': True },
     ],
     5: [
     { 'unitX': 1 },
+    { 'unitX': 1, 'convex': True },
     ]
 }
 
