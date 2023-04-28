@@ -22,6 +22,13 @@ The latest Cadquery can be installed with PIP:
 pip install --pre cadquery
 ```
 
+To install Cadquery alongside the [bernhard-42/jupyter-cadquery](https://github.com/bernhard-42/jupyter-cadquery) plugin, use the included
+`requirements.txt` file
+
+```
+pip install --pre -r requirements.txt 
+```
+
 The main ``keycap`` function in the ``opk.py`` file has sane defaults and parameters are sufficiently commented.
 
 The *export* directory includes a few examples in both STL and STEP format.
